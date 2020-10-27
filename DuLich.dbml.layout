@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 12.125, 10.5" name="DuLich">
+  <DataContextMoniker Name="/DuLichDataContext" />
+  <nestedChildShapes>
+    <classShape Id="d4ca13e1-8f4f-4b82-92fb-04241eda2e5f" absoluteBounds="6.75, 4.75, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/DuLichDataContext/Administration" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2ed631be-f1c5-4b6c-bebf-adef94be2656" absoluteBounds="6.765, 5.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="79dff575-7b84-49c2-b17a-0fbcf22b8aa2" absoluteBounds="6.75, 7.75, 2, 2.5401025390624996">
+      <DataClassMoniker Name="/DuLichDataContext/Contact" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f232402b-5368-414b-a768-987d3a6c318e" absoluteBounds="6.765, 8.21, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4e2649c6-1767-408e-89ef-9ca6bef8d999" absoluteBounds="3.5, 5.5, 2, 2.3478011067708344">
+      <DataClassMoniker Name="/DuLichDataContext/Customer" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ed7cb451-f341-495d-b233-a7b44b1b4fc1" absoluteBounds="3.515, 5.96, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="01db7b63-d5c0-451a-a6d0-45f3e629a094" absoluteBounds="9.875, 1.375, 2, 2.5401025390625005">
+      <DataClassMoniker Name="/DuLichDataContext/New" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d138c8c1-af09-4f13-a4ed-9d7de6c354f2" absoluteBounds="9.89, 1.835, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2b9ccd07-5663-4464-89f7-e1e750633e5b" absoluteBounds="0.75, 2, 2, 1.3862939453125003">
+      <DataClassMoniker Name="/DuLichDataContext/ProvinceCity" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d51282d3-a8fc-4ea1-a1ee-0e2ab70fb041" absoluteBounds="0.765, 2.46, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1a689101-fbe3-441b-b439-03c1c0859256" absoluteBounds="3.5, 1, 2, 3.3093082682291666">
+      <DataClassMoniker Name="/DuLichDataContext/Tour" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a987a47e-9e94-4d3b-a611-c42fd9212fe3" absoluteBounds="3.515, 1.46, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7e528d4a-42d0-485a-b0ab-d7aa064d9ebd" absoluteBounds="6.25, 1.625, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/DuLichDataContext/TourBooking" />
+      <nestedChildShapes>
+        <elementListCompartment Id="83f3df12-6287-464b-a82c-6939218f9d23" absoluteBounds="6.265, 2.085, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3ce65536-3364-4b0f-aff2-dc1933a76be6" absoluteBounds="0.75, 8.75, 2, 1.3862939453124987">
+      <DataClassMoniker Name="/DuLichDataContext/User" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e5331860-e9e5-4fea-8b0c-89d5db16781e" absoluteBounds="0.765, 9.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 2.69314697265625); (3.5 : 2.69314697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DuLichDataContext/ProvinceCity/ProvinceCity_Tour" />
+      <nodes>
+        <classShapeMoniker Id="2b9ccd07-5663-4464-89f7-e1e750633e5b" />
+        <classShapeMoniker Id="1a689101-fbe3-441b-b439-03c1c0859256" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 2.70274983723958); (6.25 : 2.70274983723958)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DuLichDataContext/Tour/Tour_TourBooking" />
+      <nodes>
+        <classShapeMoniker Id="1a689101-fbe3-441b-b439-03c1c0859256" />
+        <classShapeMoniker Id="7e528d4a-42d0-485a-b0ab-d7aa064d9ebd" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 6.94314697265625); (6.46875 : 6.94314697265625); (6.46875 : 3.78049967447917)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DuLichDataContext/Customer/Customer_TourBooking" />
+      <nodes>
+        <classShapeMoniker Id="4e2649c6-1767-408e-89ef-9ca6bef8d999" />
+        <classShapeMoniker Id="7e528d4a-42d0-485a-b0ab-d7aa064d9ebd" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
